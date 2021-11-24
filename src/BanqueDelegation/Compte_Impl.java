@@ -3,12 +3,8 @@ package BanqueDelegation;
 public class Compte_Impl implements CompteOperations{
 
 	public float montant ;
-	public int taux;
-	public boolean decouvertAutorise;
-	public Compte_Impl(float montant,int taux,boolean decouvertAutorise) {
+	public Compte_Impl(float montant) {
 		this.montant=montant;
-		this.taux=taux;
-		this.decouvertAutorise=decouvertAutorise;
 	}
 
 	@Override

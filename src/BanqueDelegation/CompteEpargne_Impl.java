@@ -2,8 +2,11 @@ package BanqueDelegation;
 
 public class CompteEpargne_Impl extends Compte_Impl implements CompteEpargneOperations {
 
-	public CompteEpargne_Impl(float montant, int taux, boolean decouvertAutorise) {
-		super(montant, taux, decouvertAutorise);
+	public int taux;
+	
+	public CompteEpargne_Impl(float montant, int taux) {
+		super(montant);
+		this.taux=taux;
 		// TODO Auto-generated constructor stub
 	}
 

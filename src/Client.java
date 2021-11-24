@@ -43,24 +43,28 @@ class Client {
 			switch (ch) {
 			case '1':
 				// Lecture du montant du compte
-				System.out.println("Montant"+compte.lire_montant());
+				System.out.println("Montant = "+compte.lire_montant());
 				break;
 			case '2':
 				// Crediter le compte
+				System.out.print("Montant = ");
 				float montantC = sc.nextFloat();
 				compte.crediter(montantC);
 				break;
 			case '3':
 				// Debiter le compte
+				System.out.print("Montant = ");
 				float montantD = sc.nextFloat();
 				compte.debiter(montantD);
 				break;
 			case '4':
 				// Lecture du taux de rémunération
-				System.out.println("Taux"+compte.taux());
+				System.out.println("Taux = "+compte.taux());
 				break;
 			case '5':
 				// Mise à jour du taux de rémunération
+
+				System.out.print("Taux = ");
 				int taux=sc.nextInt();
 				compte.taux(taux);
 				break;
@@ -70,6 +74,8 @@ class Client {
 				break;
 			case '7':
 				// Mise à jour de l’autorisation de découvert
+
+				System.out.print("Autoriser ? ");
 				boolean autorisation=sc.nextBoolean();
 				compte.DecouvertAutorise(autorisation);
 				break;
